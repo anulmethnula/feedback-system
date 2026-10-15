@@ -2,7 +2,7 @@
   <img src="readme-banner.svg" width="100%" alt="Supun Feedback Management System" />
 </p>
 
-<p align="center"><b>A QR-based guest feedback system built for hospitality environments.</b></p>
+<p align="center"><b>QR-based guest feedback • secure admin management • web + mobile</b></p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/React-Web-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
@@ -10,58 +10,46 @@
   <img src="https://img.shields.io/badge/Capacitor-Mobile-119EFF?style=flat-square&logo=capacitor&logoColor=white" alt="Capacitor" />
 </p>
 
----
+## ✦ Experience Flow
 
-## Project Snapshot
+<p align="center">
+  <img src="readme-experience.svg" width="96%" alt="Guest feedback experience" />
+</p>
 
-| | |
-|---|---|
-| **Business problem** | Guest feedback is often slow, scattered and hard to track by location. |
-| **Solution** | A QR-driven feedback flow with secure admin management and notifications. |
-| **Users** | Guests + administrators. |
-| **Platforms** | Web, Android and iOS through Capacitor. |
-
-## Experience Context
+## ✦ Hospitality Context
 
 <div align="center">
-  <img src="public/rest1.jpeg" width="72%" alt="Hospitality environment" />
+<table>
+<tr>
+<td align="center" width="55%"><img src="public/rest1.jpeg" width="95%" alt="Hospitality environment" /></td>
+<td align="center" width="45%"><img src="public/images/customer-hospitality-background.png" width="95%" alt="Customer hospitality visual" /></td>
+</tr>
+</table>
 </div>
 
-## Key Features
+## What It Does
 
-- QR-based access by location code
-- Multi-step validated guest feedback form
-- Zone and location-aware submissions
-- Secure Firebase Authentication
-- Protected management area
-- Firestore security rules
-- Email notifications for feedback updates
-- Responsive mobile-first interface
-- Android and iOS packaging with Capacitor
+Guests scan a location QR code, submit structured feedback, and receive a private confirmation. Administrators review responses securely and use the data for service follow-up.
 
-## User Flow
+### Main Features
+- QR access linked to location and zone
+- Multi-step validated feedback form
+- Secure Firebase Authentication + Firestore rules
+- Protected admin management area
+- Email notifications
+- Responsive web experience
+- Android and iOS support through Capacitor
 
-`Scan QR` → `Open location` → `Submit feedback` → `Private confirmation` → `Admin reviews` → `Status update`
+## Why This Project Matters
 
-## What This Project Demonstrates
-
-- Converting a service problem into a simple guest-facing workflow
-- Capturing structured feedback by location and zone
-- Protecting management data while keeping public submission easy
-- Supporting web and mobile delivery from one React codebase
-- Connecting customer experience data to operational follow-up
-
-## Security & Data Design
-
-- Public users cannot read stored feedback
-- Public submissions are validated by Firestore rules
-- Admin routes require authentication
-- Email credentials are stored as deployment secrets
-- Server timestamps are used for important records
+- Makes guest feedback quick and low-friction
+- Converts comments into structured operational data
+- Keeps management data private while allowing public submission
+- Supports one React codebase across web and mobile
 
 ## Repository Context
 
-This repository is a **forked/collaborative codebase**. For interview discussion, individual work should be explained using the repository's commit and collaboration history rather than treating the full codebase as single-author work.
+This is a **forked/collaborative codebase**. Individual contribution should be discussed using commit and collaboration history rather than presenting the full codebase as single-author work.
 
 ## Run Locally
 
@@ -70,21 +58,8 @@ npm install
 npm run dev
 ```
 
-Copy `.env.example` to `.env` and add the Firebase web configuration.
-
-Build:
-
-```bash
-npm run build
-```
-
-Mobile helpers:
-
-```bash
-npm run mobile:android
-npm run mobile:ios
-```
+Copy `.env.example` to `.env` and add Firebase configuration.
 
 ---
 
-<p align="center"><b>Fast guest input → structured data → clearer service decisions.</b></p>
+<p align="center"><b>Guest input → structured data → better service decisions.</b></p>
